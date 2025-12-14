@@ -1,0 +1,378 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(90deg, #0a4c8b, #1db9aa);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #ffe600;
+}
+
+.btn {
+  background: white;
+  color: #0a4c8b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffe600;
+  color: #0a4c8b;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #e0f7fa, #e8f1fc);
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 15px;
+  width: 350px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.search-box input:focus {
+  border-color: #0a4c8b;
+}
+
+.search-box button {
+  padding: 15px 25px;
+  border-radius: 50px;
+  border: none;
+  background: #0a4c8b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #1db9aa;
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 40px 30px;
+  width: 220px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-weight: 600;
+  color: #0a4c8b;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  background: linear-gradient(145deg, #1db9aa, #0a4c8b);
+  color: white;
+}
+
+/* About Us */
+.about-us {
+  background: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-us h2 {
+  color: #0a4c8b;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Specialities */
+.specialities {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f1f7ff;
+}
+
+.specialities h2 {
+  font-size: 36px;
+  color: #0a4c8b;
+  margin-bottom: 40px;
+}
+
+.speciality-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.speciality-card {
+  flex: 1 1 180px;
+  background: white;
+  border-radius: 20px;
+  padding: 40px 20px;
+  font-weight: 600;
+  color: #0a4c8b;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.speciality-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #1db9aa, #0a4c8b);
+  color: white;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 80px 20px;
+  text-align: center;
+  background: #eef5fb;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  color: #0a4c8b;
+  margin-bottom: 40px;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.review-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 20px;
+  max-width: 300px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.review-card p {
+  font-style: italic;
+  color: #555;
+}
+
+.review-card h4 {
+  margin-top: 15px;
+  color: #0a4c8b;
+}
+
+.footer {
+  background: linear-gradient(90deg, #0a4c8b, #1db9aa);
+  color: white;
+  padding: 60px 50px 30px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: #ffe600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social {
+  background: rgba(255,255,255,0.2);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.social:hover {
+  background: #ffe600;
+  color: #0a4c8b;
+}
+
+.subscribe-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.subscribe-box input {
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.subscribe-box button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #ffe600;
+  color: #0a4c8b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe-box button:hover {
+  background: white;
+  color: #0a4c8b;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .services, .speciality-list, .reviews {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  .nav a {
+    margin: 5px 10px;
+  }
+
+  .search-box input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .services, .speciality-list, .reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+}
