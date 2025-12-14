@@ -18,6 +18,7 @@ function Footer() {
         <p><a href="#">Services</a></p>
         <p><a href="#">Specialities</a></p>
         <p><a href="#">Contact</a></p>
+        <p><a href="#">Blog</a></p>
       </div>
 
       <div className="footer-section">
