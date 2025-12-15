@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 import "../App.css";
 
 function Header() {
   return (
     <header className="header">
-      <div className="logo">BestFit Health</div>
+      <div className="logo">DietShree</div>
 
       <nav className="nav">
-        <a href="#">Doctors</a>
-        <a href="#">Services</a>
-        <a href="#">Reports</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/services">Services</Link>
+        <Link to="/blog">Blog</Link>
+        <Link to="/contact">Contact Us</Link>
       </nav>
 
       <button className="btn">Book Appointment</button>
