@@ -590,3 +590,19 @@ body {
 .card p {
   margin: 0 0 12px 0;
 }
+
+
+#mobile-breadcrumb {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #mobile-breadcrumb {
+    display: block;
+    padding: 8px 12px;
+    font-size: 13px;
+    background: #f5f5f5;
+    color: #444;
+    border-bottom: 1px solid #ddd;
+  }
+}

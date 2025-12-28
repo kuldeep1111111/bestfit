@@ -37,14 +37,13 @@ const Services = () => {
     flexWrap: "wrap",
     gap: "20px",
     padding: "20px",
-    justifyContent: window.innerWidth > 768 ? "center" : "flex-start",
-    overflowX: window.innerWidth <= 768 ? "auto" : "hidden",
-    whiteSpace: window.innerWidth <= 768 ? "nowrap" : "normal",
-    WebkitOverflowScrolling: "touch"
+    justifyContent: "center",
+    overflowX: "hidden" // horizontal scroll remove
   };
 
   const cardStyle = {
-    flex: "0 0 280px",
+    flex: "1 1 100%", // mobile: full width
+    maxWidth: "280px", // desktop: max 280px
     border: "1px solid #ddd",
     borderRadius: "12px",
     padding: "16px",
@@ -52,10 +51,10 @@ const Services = () => {
     fontSize: "14px",
     lineHeight: "1.5",
     backgroundColor: "#fff",
-    minWidth: "280px",
     boxSizing: "border-box",
     transition: "transform 0.3s ease, box-shadow 0.3s ease",
-    cursor: "pointer"
+    cursor: "pointer",
+    marginBottom: "20px"
   };
 
   const cardHoverStyle = {
@@ -84,7 +83,7 @@ const Services = () => {
 
   const buttonContainerStyle = {
     display: "flex",
-    justifyContent: "center",  // Center the button
+    justifyContent: "center", // Center the button
     marginTop: "30px"
   };
 
